@@ -4,113 +4,249 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Stillwater NeuroRegulation Hypnotherapy</title>
-  <meta name="description" content="Calm your nervous system, release stress loops, and feel like yourself again." />
+  <meta name="description" content="Discreet hypnotherapy and nervous system regulation. Calm authority, structured care, and measurable progress." />
 
+  <!-- Open Graph -->
   <meta property="og:title" content="Stillwater NeuroRegulation Hypnotherapy" />
-  <meta property="og:description" content="Calm your nervous system, release stress loops, and feel like yourself again." />
+  <meta property="og:description" content="Discreet hypnotherapy and nervous system regulation. Calm authority, structured care, and measurable progress." />
   <meta property="og:type" content="website" />
+
+  <!-- Fonts: classy serif + modern sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <header class="top">
-    <div class="wrap">
-      <div class="brand">
-        <div class="logo" aria-hidden="true">S</div>
-        <div>
-          <h1>Stillwater NeuroRegulation</h1>
-          <p class="tag">Calm your nervous system, release the loop, come back to you.</p>
-        </div>
-      </div>
-      <nav class="nav">
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#top" aria-label="Stillwater NeuroRegulation home">
+        <span class="mark" aria-hidden="true">S</span>
+        <span class="brand-text">
+          <span class="brand-name">Stillwater NeuroRegulation</span>
+          <span class="brand-sub">Hypnotherapy and Nervous System Regulation</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
         <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="btn">Contact</a>
+        <a href="#approach">Approach</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-gold" href="#contact">Contact</a>
       </nav>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-controls="mobileNav" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-gold" href="#contact">Contact</a>
     </div>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero">
       <div class="wrap hero-grid">
-        <div>
-          <h2>Feel steady again, on purpose.</h2>
-          <p>
-            Practical hypnotherapy and nervous system regulation tools for stress, grief, breakup recovery,
-            anxiety loops, and those days when your body feels stuck.
+        <div class="hero-copy">
+          <p class="kicker">Private, structured, and discreet</p>
+          <h1>Steady. Composed. In control.</h1>
+          <p class="lead">
+            Stillwater NeuroRegulation provides a focused approach to hypnotherapy and nervous system regulation
+            for stress, emotional disruption, grief, and persistent mental loops. Sessions are structured, practical,
+            and designed for real life.
           </p>
-          <div class="cta">
-            <a class="btn big" href="#contact">Book a free consult</a>
-            <a class="ghost big" href="#services">See services</a>
+
+          <div class="cta-row">
+            <a class="btn btn-gold btn-lg" href="#contact">Schedule a consultation</a>
+            <a class="btn btn-ghost btn-lg" href="#services">View services</a>
           </div>
-          <p class="micro">No overwhelm. No weirdness. Just calm, clarity, and traction.</p>
+
+          <p class="micro">
+            Calm authority. Clear steps. No performative wellness.
+          </p>
         </div>
 
-        <div class="card">
-          <h3>Quick Start</h3>
-          <ul>
-            <li>15 minute consult</li>
-            <li>Clear plan after session 1</li>
-            <li>Tools you can use at home</li>
+        <aside class="hero-card" aria-label="Quick details">
+          <h2 class="card-title">Quick details</h2>
+
+          <ul class="checklist">
+            <li>Confidential sessions</li>
+            <li>Clear plan after session one</li>
+            <li>Tools you can use between sessions</li>
           </ul>
-          <button class="mini" id="calmBtn" type="button">Tap for a 10 second calm reset</button>
-          <p class="tiny" id="calmText" aria-live="polite"></p>
-        </div>
+
+          <div class="divider"></div>
+
+          <h3 class="card-subtitle">Ten second reset</h3>
+          <p class="card-text">
+            A small, practical regulation cue you can use anywhere.
+          </p>
+
+          <button class="btn btn-ghost" id="resetBtn" type="button">Run the reset</button>
+          <p class="reset-text" id="resetText" aria-live="polite"></p>
+        </aside>
       </div>
     </section>
 
     <section id="services" class="section">
       <div class="wrap">
-        <h2>Services</h2>
-        <div class="grid">
-          <div class="tile">
-            <h3>Loop Reset</h3>
-            <p>Interrupt spirals and repetitive thinking, then build steadier patterns fast.</p>
-          </div>
-          <div class="tile">
-            <h3>Breakup and Loss Recovery</h3>
-            <p>Stabilize the system, process the shock, rebuild identity and routine.</p>
-          </div>
-          <div class="tile">
-            <h3>Stress and Somatic Calm</h3>
-            <p>For tight bodies, shallow breathing, sleep disruption, and constant vigilance.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <header class="section-head">
+          <h2>Services</h2>
+          <p>
+            Choose a focused track. Each begins with assessment and ends with a plan.
+          </p>
+        </header>
 
-    <section id="about" class="section alt">
-      <div class="wrap">
-        <h2>About</h2>
-        <p>
-          This is a calm corner of the internet. You bring the messy human stuff, I bring a structured process.
-          The goal is safer, steadier, and more functional.
+        <div class="grid-3">
+          <article class="tile">
+            <h3>Loop Reset</h3>
+            <p>
+              For repetitive thought patterns, rumination, and the mental replay that will not switch off.
+              We reduce activation and rebuild steadier patterns.
+            </p>
+          </article>
+
+          <article class="tile">
+            <h3>Breakup and Loss Recovery</h3>
+            <p>
+              For shock, grief, identity disruption, and the body-level aftermath of relational loss.
+              We stabilize first, then restore function.
+            </p>
+          </article>
+
+          <article class="tile">
+            <h3>Stress and Somatic Calm</h3>
+            <p>
+              For tight bodies, shallow breathing, sleep disruption, and persistent vigilance.
+              We build regulation skills that hold under pressure.
+            </p>
+          </article>
+        </div>
+
+        <p class="note">
+          This site is informational and not medical advice. If you are in crisis or feel unsafe, contact local emergency services.
         </p>
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="approach" class="section section-alt">
       <div class="wrap">
-        <h2>Contact</h2>
-        <p>Replace these with your real email and booking link.</p>
+        <header class="section-head">
+          <h2>Approach</h2>
+          <p>
+            Elegant does not mean vague. This work is structured.
+          </p>
+        </header>
 
-        <div class="contact">
+        <div class="grid-2">
+          <div class="tile">
+            <h3>Assessment</h3>
+            <p>
+              We identify triggers, patterns, and the nervous system signals that show up in your body and behavior.
+              You will leave session one with clear next steps.
+            </p>
+          </div>
+
+          <div class="tile">
+            <h3>Regulation</h3>
+            <p>
+              We use practical tools to reduce activation, improve sleep, and restore capacity.
+              Calm is a skill, not a personality trait.
+            </p>
+          </div>
+
+          <div class="tile">
+            <h3>Hypnotherapy</h3>
+            <p>
+              We work with attention and imagery to update the internal response, reduce looping, and reinforce stability.
+              The goal is self-command, not trance theatrics.
+            </p>
+          </div>
+
+          <div class="tile">
+            <h3>Integration</h3>
+            <p>
+              You practice between sessions. We adjust based on what works.
+              Progress is built, not wished into existence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>FAQ</h2>
+          <p>Simple answers, no mystique.</p>
+        </header>
+
+        <div class="faq">
+          <details class="faq-item">
+            <summary>What does a first session look like?</summary>
+            <p>
+              We clarify your goal, identify the pattern, and choose a practical track. You will leave with a plan and at least one
+              regulation tool to use immediately.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Is this therapy or coaching?</summary>
+            <p>
+              It is hypnotherapy with a regulation focus. It is structured and skills-based. It does not replace medical care.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How many sessions do people usually do?</summary>
+            <p>
+              It depends on the goal and severity. Many people feel meaningful relief within a small number of sessions, then shift
+              into maintenance or targeted work.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>Contact</h2>
+          <p>
+            Replace the placeholders below with your real contact details. Keep it clean and simple.
+          </p>
+        </header>
+
+        <div class="grid-3">
           <div class="tile">
             <h3>Email</h3>
             <p><a href="mailto:you@example.com">you@example.com</a></p>
+            <p class="small">Use a professional address for trust and deliverability.</p>
           </div>
+
           <div class="tile">
             <h3>Booking</h3>
-            <p><a href="#">Add your booking link</a></p>
+            <p><a href="#" aria-label="Booking link">Add your booking link</a></p>
+            <p class="small">Calendly, Acuity, Square, or a simple form are fine.</p>
           </div>
+
           <div class="tile">
             <h3>Location</h3>
             <p>Online sessions, Ohio and beyond.</p>
+            <p class="small">Add city details only if you want local SEO.</p>
           </div>
         </div>
 
-        <footer class="footer">
-          <p class="tiny">© <span id="year"></span> Stillwater NeuroRegulation. All rights reserved.</p>
+        <footer class="site-footer">
+          <p class="footer-text">
+            © <span id="year"></span> Stillwater NeuroRegulation. All rights reserved.
+          </p>
         </footer>
       </div>
     </section>
