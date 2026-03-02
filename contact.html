@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Lola Jean Sinclair</title>
+  <meta name="description" content="Book a free consult for trauma recovery hypnotherapy. Virtual sessions. Contact form and phone." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span class="brand-text">
+          <span class="brand-name">Lola Jean Sinclair</span>
+          <span class="brand-sub">Trauma Recovery Hypnotherapy, Virtual</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="program.html">6-Week Program</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="faq.html">FAQ</a>
+        <a href="kappas-theory.html">Theory of Mind</a>
+        <a class="btn btn-small" href="contact.html">Free Consult</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span aria-hidden="true">Menu</span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <div class="container mobile-nav-inner">
+        <a href="program.html">6-Week Program</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="faq.html">FAQ</a>
+        <a href="kappas-theory.html">Theory of Mind</a>
+        <a class="btn" href="contact.html">Book a Free Consult</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>
+            Use the form to request a free consult. You can also call or text.
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div class="panel">
+            <h3>Request a free consult</h3>
+            <p class="muted">This form opens your email app. Replace the placeholder email and phone with yours.</p>
+
+            <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+              <div class="story">
+                <p class="story-title">Name</p>
+                <p class="story-body"><input name="name" required style="width:100%; padding:12px; border-radius:12px; border:1px solid rgba(17,17,17,.12);" /></p>
+              </div>
+
+              <div class="story">
+                <p class="story-title">Email</p>
+                <p class="story-body"><input type="email" name="email" required style="width:100%; padding:12px; border-radius:12px; border:1px solid rgba(17,17,17,.12);" /></p>
+              </div>
+
+              <div class="story">
+                <p class="story-title">What are you looking for help with?</p>
+                <p class="story-body">
+                  <textarea name="message" rows="5" required style="width:100%; padding:12px; border-radius:12px; border:1px solid rgba(17,17,17,.12);"></textarea>
+                </p>
+              </div>
+
+              <div class="cta-row">
+                <button class="btn" type="submit">Send request</button>
+                <a class="btn btn-ghost" href="index.html">Return Home</a>
+              </div>
+            </form>
+          </div>
+
+          <div class="panel">
+            <h3>Phone</h3>
+            <p class="muted">
+              Replace this with your number:
+              <br />
+              <strong>(555) 555-5555</strong>
+            </p>
+
+            <h3 style="margin-top:18px;">Privacy</h3>
+            <p class="muted">
+              Please do not include highly sensitive information in the initial message.
+              We will cover details in session or via a secure process.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Lola Jean Sinclair</p>
+        <p class="muted">Trauma Recovery Hypnotherapy, Virtual</p>
+      </div>
+      <div class="footer-links">
+        <a href="program.html">6-Week Program</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="faq.html">FAQ</a>
+        <a href="kappas-theory.html">Theory of Mind</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="muted small">
+        <p>© <span id="year"></span> Lola Jean Sinclair. All rights reserved.</p>
+        <p>Site content is educational and not medical advice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
